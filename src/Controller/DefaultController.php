@@ -12,7 +12,7 @@ class DefaultController
 		public function index()
     {
         return new Response(
-            '<html><body>Hep! '.(new \DateTime())->format(\DateTime::ATOM).'</body></html>'
+            '<html><body>Time: '.(new \DateTime())->format(\DateTime::ATOM).'</body></html>'
         );
     }
 }
